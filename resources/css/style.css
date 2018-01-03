@@ -18,12 +18,22 @@ body {
 /* Company Header */
 
 .company .container {
+  position: relative;
+  top: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   color: white;
   background-color: cadetblue;
+}
+
+.company {
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
 }
 
 .logo {
@@ -42,4 +52,35 @@ nav ul {
 
 nav ul li {
   padding-left: 2rem;
+}
+
+.tagline {
+  position: relative;
+  top: 10rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+  background-color: white;
+}
+
+
+/* Services */
+
+.services {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto;
+}
+
+.exams img {
+  width: 3.5rem;
+}
+
+.fitting img {
+  width: 5rem;
+}
+
+.delivery img {
+  width: 5rem;
 }
