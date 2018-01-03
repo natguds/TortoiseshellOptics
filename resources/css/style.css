@@ -65,12 +65,22 @@ nav ul li {
 }
 
 
-/* Services */
+/* Supporting Information */
 
 .services {
   display: flex;
   justify-content: center;
-  margin: 3rem auto;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+  text-align: center;
 }
 
 .exams img {
@@ -83,4 +93,47 @@ nav ul li {
 
 .delivery img {
   width: 5rem;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.philosophy {
+  width: 35%;
+}
+
+.appointments {
+  width: 35%;
+  margin-left: 5%;
+}
+
+.about h4 {
+  width: 10rem;
+  color: white;
+  background-color: cadetblue;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+}
+
+.about p {
+  margin-top: 1rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: azure;
+}
+
+.logo-black {
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+}
+
+.logo-black img {
+  height: 1.5rem;
+  padding-right: 1rem;
 }
