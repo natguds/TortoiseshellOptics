@@ -1,11 +1,11 @@
 /* Universal Styles */
 
 html {
+  font-family: "Helvetica", sans-serif;
   font-size: 18px;
 }
 
 body {
-  font-family: "Helvetica", sans-serif;
   line-height: 1.4;
 }
 
@@ -14,10 +14,15 @@ body {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1000px) {
+  .container {
+    max-width: 100%;
+  }
+}
 
 /* Company Header */
 
-.company .container {
+header .container {
   position: relative;
   top: 1rem;
   display: flex;
@@ -28,7 +33,7 @@ body {
   background-color: cadetblue;
 }
 
-.company {
+header {
   background-image: url("../images/glasses-bg.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -54,14 +59,63 @@ nav ul li {
   padding-left: 2rem;
 }
 
+.menu-mobile {
+  display: none;
+}
+
 .tagline {
-  position: relative;
-  top: 10rem;
+  display: inline-block;
+  position: absolute;
+  top: 13rem;
+  right: 5rem;
+  padding: 1.5rem 5rem;
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.2;
-  padding: 1.5rem 5rem;
   background-color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  header .container {
+    top: 0;
+  }
+
+  header {
+    height: 22rem;
+  }
+
+  .tagline {
+    top: 8rem;
+    right: 2rem;
+    padding: 0.75rem 4rem;
+    font-size: 1.5rem;
+    line-height: 3;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .menu-normal {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  header {
+    height: 17rem;
+  }
+
+  .tagline {
+    top: 12rem;
+    padding: 1rem auto;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
 }
 
 
@@ -119,6 +173,15 @@ nav ul li {
 
 .about p {
   margin-top: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .services {
+    flex-direction: column;
+  }
+  .service-item {
+  }
+
 }
 
 /* Footer */
